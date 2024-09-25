@@ -1,22 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap ');
+
 :root{
-   --azul_claro: rgb(0, 172, 230);
+    --azul_claro: rgb(0, 172, 230);
     --amarelo_canario: rgb(255, 187, 0);
     --verde_limao: rgb(0, 202, 0);
-   --preto:rgb(0, 0, 0);
-   --branco:rgb(255, 255, 255);
-   --vermelho: rgb(255, 0, 0);
+    --preto: rgb(0, 0, 0);
+    --branco: rgb(255, 255, 255);
+    --vermelho: rgb(255, 0, 0);
 }
 
 #menu_topo{
-    width: 100%;
     height: 90px;
     background-color: var(--azul_claro);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 body{
     margin: 0px;
+    font-family: marhey;
+    background-image: url(imagens/nuvem.png);
 }
+
 #caixa_menus{
+    display: flex;    
+    color: var(--branco);
+}
+
+.item_menu{
+    margin-right: 30px;
     display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px 0px 40px 40px;
+    height: 90px;
+}
+.item_menu:hover{
+    background-color: var(--amarelo_canario);
+}
+
+.menu_ativado{
+    background-color: var(--vermelho);
+}
+
+#banner{
+    width: 100%;
+    height: 40vw;
+    background-image: url(imagens/criancas.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensagem{
+    background-color: rgba(0, 173, 230, 0.6);
+    width: 800px;
+    height: 300px;
+    color: var(--branco);
+    text-align: center;
+    padding: 43px;
+    border-radius: 70px 20px 70px 20px;
+}
+
+#mensagem h1{
+    font-size: 60px;
+    line-height: 55px;
+}
+
+#mensagem p{
+    font-size: 30px;
+    line-height: 27px;
+}
+
+#container{
+    text-align: center;
+}
+
+#secao_01{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#crianças_secao_01{
+    background-image: url(imagens/criancas2.jpg);
+    width: 450px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 50px 10px 50px 10px;
+}
+
+#conteudo_secao_01{
+    width: 600px;
+    text-align: left;
+    padding-left: 50px;
+}
+#conteudo_secao_01 h1{
+    font-size: 40px;
 }
